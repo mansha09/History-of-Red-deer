@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header, nav {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+footer {
+    margin-top: auto; 
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+a {
+    color: #333; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0077cc; 
+}
+
+
+a:active {
+    color: #ff6600; 
+}
+
+a, a:hover, a:active {
+    transition: color 0.3s ease;
+}
+
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between; /* Adjusts the space between images */
+    margin: 20px 0;
+}
+
+.image-box {
+    flex: 1; /* Each image box takes equal space */
+    margin: 0 10px; /* Add margin between image boxes */
+    max-width: 300px; /* Optional: set a max width for the boxes */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+}
+
+.image-box img {
+    width: 100%; /* Ensures images take up full width of the box */
+    height: 200px; /* Set a fixed height to make all images the same size */
+    object-fit: cover; /* Ensures the image covers the box without stretching */
+    border: 1px solid #ccc;
+}
